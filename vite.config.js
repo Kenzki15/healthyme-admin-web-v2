@@ -3,7 +3,7 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    base: 'https://healthyme-admin-web-v2.onrender.com/build/', // <-- 🔥 Add this to fix HTTPS asset URLs
+    base: '/', // Changed from absolute URL to relative path to serve assets from same domain
     plugins: [
         laravel({
             input: 'resources/js/app.js',
